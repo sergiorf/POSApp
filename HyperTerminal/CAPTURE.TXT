@@ -1,0 +1,2869 @@
+
+SVC_RESTART (  )
+
+Active at 120836
+T1 at 43EAB000 sts=0 ms=36     ct=1369     pc=70422208 sp=7041FB68
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:292 sts:0 last:40000000 raw:8 ena:0 T=4294895021
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  30 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=98550 R=332618 E=2506 FC=61638
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 331 (38.1 C)
+Coin Cell Voltage: 880 (3096 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301061232250.126
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, ) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4518)
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+Reset at 201301061232250
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 109 ms, 2596 turns
+kill_threads 
+*** run (F:#SEMTEK.OUT, ) *** In G45: T1 -> T2 at 40294040; 61232 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70434000 (80 KB)
+     data = 70434000 .. 70437790 (14224 bytes)
+     heap = 70437790 .. 7044C000 (84080 bytes)
+    stack = 7040C000 .. 7041FE00 (80 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** run (N:VxEOS.OUT, ) *** In G46: T1 -> T3 at 402A8040; 61180 KB avail
+   TCB addr 43E73000
+   TCB_PC = 70420075
+     code = 70420000 .. 70421000 (4 KB)
+     data = 70421000 .. 70421010 (16 bytes)
+     heap = 70421010 .. 70424000 (12272 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+VXEOS.OUT Ver 1.0.0.5
+VxEOS - Terminal Serial Number[528-900-899]
+VxEOS - Dev File Serial Number[NOT-UNL-OCK]
+PIC lib 18 code:[70300000..70306000],22690
+PIC lib 18 data:[70306000..70307000],44
+PIC lib 29 code:[70307000..70370000],427536
+PIC lib 29 data:[70370000..70383000],77036
+PIC lib 30 code:[70383000..70385000],8068
+PIC lib 30 data:[70385000..70386000],57
+
+*** run (CESMPL.OUT, ) *** In G1: T1 -> T4 at 402A9040; 60064 KB avail
+   TCB addr 43E67000
+   TCB_PC = 704200A5
+     code = 70420000 .. 70426000 (24 KB)
+     data = 70426000 .. 70426158 (344 bytes)
+     heap = 70426158 .. 70470000 (302760 bytes)
+    stack = 703E2000 .. 7041FE00 (248 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - Copied Config N:46/CONFIG.SYS, rc=0 errno=0
+VxEOS - Processing N:46/VXEOSC.MAN ...
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VXCE.out, ) *** In G46: T3 -> T5 at 40320040; 59672 KB avail
+   TCB addr 43DC7000
+   TCB_PC = 704200A5
+     code = 70420000 .. 7043D000 (116 KB)
+     data = 7043E000 .. 7043E368 (872 bytes)
+     heap = 7043E368 .. 70470000 (203928 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+VxEOS - run(N:46/VXCE.out, NULL). retVal[5], errno[0]
+SMF found: N:/NET.LIB, 4033e000
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+SMF found: N:/SSL.LIB, 402af000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 29 code:[70464000..704CD000],427536
+PIC lib 29 data:[704CD000..704E0000],77036
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VxNCP.out, ) *** In G46: T3 -> T6 at 40344040; 59288 KB avail
+   TCB addr 43D88000
+   TCB_PC = 704200B5
+     code = 70420000 .. 70436000 (88 KB)
+     data = 70436000 .. 70438768 (10088 bytes)
+     heap = 70438768 .. 70464000 (178328 bytes)
+    stack = 7041D000 .. 7041FE00 (12 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (7042219F, 0, 12288) *** In G46: T5 -> T7; 59272 avail
+   TCB addr 43D3F000
+   TCB_PC = 7042219F
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - run(N:46/VxNCP.out, NULL). retVal[6], errno[0]
+SMF found: N:/ELOG.LIB, 4031e000
+ABS lib 3 code:[70500000..70503000],9321
+ABS lib 3 data:[70503000..70505000],5312
+PIC lib 4 code:[70400000..70405000],18828
+PIC lib 4 data:[70405000..70406000],1928
+PIC lib 5 code:[70438000..70441000],36414
+PIC lib 5 data:[70441000..70446000],18256
+PIC lib 6 code:[70406000..7040A000],12383
+PIC lib 6 data:[7040A000..7040B000],828
+PIC lib 7 code:[7040B000..70411000],22432
+PIC lib 7 data:[70411000..70412000],3670
+PIC lib 27 code:[70446000..7044A000],12580
+PIC lib 27 data:[7044A000..7044C000],7368
+PIC lib 30 code:[7044C000..7044E000],8068
+PIC lib 30 data:[7044E000..7044F000],57
+
+*** run (N:46/VxCTLS.out, ) *** In G46: T3 -> T8 at 4035A040; 58936 KB avail
+   TCB addr 43D3B000
+   TCB_PC = 704200E5
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 704365E0 (13792 bytes)
+     heap = 704365E0 .. 70438000 (6688 bytes)
+    stack = 70413000 .. 7041FE00 (52 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (70404165, 0, 12288) *** In G46: T6 -> T9; 58908 avail
+   TCB addr 43D16000
+   TCB_PC = 70404165
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+VXCTLS:F:ctlsapp.c|L:00439|Start
+VxEOS - run(N:46/VxCTLS.out, NULL). retVal[8], errno[0]
+Task 3 exit(0): 381 ms, 7 turns
+kill_threads  lib 25, data: 4 bytes, addr: 4038c040
+PIC lib 25 code:[7044F000..70450000],3924
+PIC lib 25 data:[70450000..70451000],4
+--Duplicated library ID 25
+ lib 25, data: 288 bytes, addr: 4038d040
+PIC lib 25 code:[70451000..70455000],14398
+PIC lib 25 data:[70455000..70456000],288
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40391040
+PIC lib 25 code:[70456000..7045A000],13332
+PIC lib 25 data:[7045A000..7045B000],12
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40395040
+PIC lib 25 code:[7045B000..7045F000],14852
+PIC lib 25 data:[7045F000..70460000],12
+
+*** thread (70304165, 0, 12288) *** In G1: T4 -> T3; 58868 avail
+   TCB addr 43E73000
+   TCB_PC = 70304165
+    stack = 70386000 .. 70389000 ( 12 KB)
+
+--Duplicated library ID 25
+ lib 25, data: 6140 bytes, addr: 40399040
+PIC lib 25 code:[70460000..70465000],18282
+PIC lib 25 data:[70465000..70467000],6140
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 4039e040
+PIC lib 25 code:[70467000..70469000],5458
+PIC lib 25 data:[70469000..7046A000],4
+--Duplicated library ID 25
+ lib 25, data: 4880 bytes, addr: 403a0040
+PIC lib 25 code:[7046A000..7046E000],13634
+PIC lib 25 data:[7046E000..70470000],4880
+ lib 24, data: 5936 bytes, addr: 403a4040
+PIC lib 24 code:[70470000..70476000],22608
+PIC lib 24 data:[70476000..70478000],5936
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 403aa040
+PIC lib 25 code:[70478000..7047C000],12980
+PIC lib 25 data:[7047C000..7047D000],12
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 403ae040
+PIC lib 25 code:[7047D000..70480000],8652
+PIC lib 25 data:[70480000..70481000],4
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+SetCurrentStrFileName,Lang = 1SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName, Filename-  CTLSEngl.msg
+SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName,hdl = 200ulValidateStringFont,font file - ,Lang - 1  lib 25, data: 1349 bytes, addr: 403b1040
+PIC lib 25 code:[70470000..7047D000],49976
+PIC lib 25 data:[7047D000..7047E000],1349
+
+*** thread (7043128D, 0, 20480) *** In G46: T5 -> T10; 58648 avail
+   TCB addr 43D09000
+   TCB_PC = 7043128D
+    stack = 7047E000 .. 70483000 ( 20 KB)
+
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+
+*** thread (704487A9, 8, 4096) *** In G46: T8 -> T11; 58636 avail
+   TCB addr 43D02000
+   TCB_PC = 704487A9
+    stack = 70481000 .. 70482000 (  4 KB)
+
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+Task 10 exit(0): 415 ms, 111 turns
+unload_DLL(70470060)
+Task 4 exit(0): 45 ms, 15 turns
+kill_threads Thrd 3 exit:orphan, 0 ms, 9 turns
+
+SVC_RESTART ( S:+ )
+
+Active at 1238752
+T1 at 43EAB000 sts=0 ms=482    ct=432      pc=70420420 sp=7041FB50
+T2 at 43EA1000 sts=1 ms=2      ct=6        pc=70420752 sp=7041F8E0
+T5 at 43DC7000 sts=1 ms=258    ct=31       pc=70420538 sp=7041ED70
+T6 at 43D88000 sts=1 ms=54     ct=7        pc=70420326 sp=7041FD98
+T7 at 43D3F000 sts=1 ms=3      ct=8        pc=704222FA sp=70412FC8
+T8 at 43D3B000 sts=1 ms=440    ct=165      pc=70422346 sp=7041FCE0
+T9 at 43D16000 sts=1 ms=1      ct=3        pc=704041C2 sp=70413FE0
+T11 at 43D02000 sts=1 ms=0      ct=1        pc=7044880A sp=70481F80
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:293 sts:0 last:40000000 raw:8 ena:0 T=4294895053
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  30 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   7 files using    38 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=98861 R=334535 E=2511 FC=61649
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 331 (38.1 C)
+Coin Cell Voltage: 884 (3110 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301061253040.194
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, S:+) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4578)
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+Reset at 201301061253040
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_zap(1,FFFE,3) P=8002 G=0
+DZ: remove(I:CESMPL.P7S, 1)
+DZ: remove(I:CESMPL.OUT, 1)
+DZ: remove(I:CESMPL.OUT.SIG, 1)
+DZ: remove(I:VXCEHW.INI, 1)
+DZ: remove(I:DDI_GPRS.INI, 1)
+dir_zap -> 5 files
+dir_zap(2,FFFE,0) P=8002 G=0
+dir_zap -> 0 files
+
+SVC_RESTART (  )
+
+Active at 26555
+T1 at 43EAB000 sts=0 ms=132    ct=467      pc=70422208 sp=7041FAE0
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:294 sts:0 last:40000000 raw:8 ena:0 T=4294895065
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  25 files using    88 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=98898 R=334948 E=2512 FC=61676
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 108 ms, 2596 turns
+kill_threads 
+*** run (F:#SEMTEK.OUT, ) *** In G45: T1 -> T2 at 40294040; 61232 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70434000 (80 KB)
+     data = 70434000 .. 70437790 (14224 bytes)
+     heap = 70437790 .. 7044C000 (84080 bytes)
+    stack = 7040C000 .. 7041FE00 (80 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** run (N:VxEOS.OUT, ) *** In G46: T1 -> T3 at 402A8040; 61180 KB avail
+   TCB addr 43E73000
+   TCB_PC = 70420075
+     code = 70420000 .. 70421000 (4 KB)
+     data = 70421000 .. 70421010 (16 bytes)
+     heap = 70421010 .. 70424000 (12272 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+VXEOS.OUT Ver 1.0.0.5
+VxEOS - Terminal Serial Number[528-900-899]
+VxEOS - Dev File Serial Number[NOT-UNL-OCK]
+PIC lib 18 code:[70300000..70306000],22690
+PIC lib 18 data:[70306000..70307000],44
+PIC lib 29 code:[70307000..70370000],427536
+PIC lib 29 data:[70370000..70383000],77036
+PIC lib 30 code:[70383000..70385000],8068
+PIC lib 30 data:[70385000..70386000],57
+
+*** run (CESMPL.OUT, ) *** In G1: T1 -> T4 at 402A9040; 60064 KB avail
+   TCB addr 43E67000
+   TCB_PC = 704200A5
+     code = 70420000 .. 70426000 (24 KB)
+     data = 70426000 .. 70426158 (344 bytes)
+     heap = 70426158 .. 70470000 (302760 bytes)
+    stack = 703E2000 .. 7041FE00 (248 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - Copied Config N:46/CONFIG.SYS, rc=0 errno=0
+VxEOS - Processing N:46/VXEOSC.MAN ...
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VXCE.out, ) *** In G46: T3 -> T5 at 40320040; 59672 KB avail
+   TCB addr 43DC7000
+   TCB_PC = 704200A5
+     code = 70420000 .. 7043D000 (116 KB)
+     data = 7043E000 .. 7043E368 (872 bytes)
+     heap = 7043E368 .. 70470000 (203928 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+VxEOS - run(N:46/VXCE.out, NULL). retVal[5], errno[0]
+SMF found: N:/NET.LIB, 4033e000
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+SMF found: N:/SSL.LIB, 402af000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 29 code:[70464000..704CD000],427536
+PIC lib 29 data:[704CD000..704E0000],77036
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VxNCP.out, ) *** In G46: T3 -> T6 at 40344040; 59288 KB avail
+   TCB addr 43D88000
+   TCB_PC = 704200B5
+     code = 70420000 .. 70436000 (88 KB)
+     data = 70436000 .. 70438768 (10088 bytes)
+     heap = 70438768 .. 70464000 (178328 bytes)
+    stack = 7041D000 .. 7041FE00 (12 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (7042219F, 0, 12288) *** In G46: T5 -> T7; 59272 avail
+   TCB addr 43D3F000
+   TCB_PC = 7042219F
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - run(N:46/VxNCP.out, NULL). retVal[6], errno[0]
+SMF found: N:/ELOG.LIB, 4031e000
+ABS lib 3 code:[70500000..70503000],9321
+ABS lib 3 data:[70503000..70505000],5312
+PIC lib 4 code:[70400000..70405000],18828
+PIC lib 4 data:[70405000..70406000],1928
+PIC lib 5 code:[70438000..70441000],36414
+PIC lib 5 data:[70441000..70446000],18256
+PIC lib 6 code:[70406000..7040A000],12383
+PIC lib 6 data:[7040A000..7040B000],828
+PIC lib 7 code:[7040B000..70411000],22432
+PIC lib 7 data:[70411000..70412000],3670
+PIC lib 27 code:[70446000..7044A000],12580
+PIC lib 27 data:[7044A000..7044C000],7368
+PIC lib 30 code:[7044C000..7044E000],8068
+PIC lib 30 data:[7044E000..7044F000],57
+
+*** run (N:46/VxCTLS.out, ) *** In G46: T3 -> T8 at 4035A040; 58936 KB avail
+   TCB addr 43D3B000
+   TCB_PC = 704200E5
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 704365E0 (13792 bytes)
+     heap = 704365E0 .. 70438000 (6688 bytes)
+    stack = 70413000 .. 7041FE00 (52 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+VXCTLS:F:ctlsapp.c|L:00439|Start
+VxEOS - run(N:46/VxCTLS.out, NULL). retVal[8], errno[0]
+Task 3 exit(0): 380 ms, 7 turns
+kill_threads 
+*** thread (70404165, 0, 12288) *** In G46: T6 -> T3; 58956 avail
+   TCB addr 43E73000
+   TCB_PC = 70404165
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+ lib 25, data: 4 bytes, addr: 4038c040
+PIC lib 25 code:[7044F000..70450000],3924
+PIC lib 25 data:[70450000..70451000],4
+--Duplicated library ID 25
+ lib 25, data: 288 bytes, addr: 4038d040
+PIC lib 25 code:[70451000..70455000],14398
+PIC lib 25 data:[70455000..70456000],288
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40391040
+PIC lib 25 code:[70456000..7045A000],13332
+PIC lib 25 data:[7045A000..7045B000],12
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40395040
+PIC lib 25 code:[7045B000..7045F000],14852
+PIC lib 25 data:[7045F000..70460000],12
+
+*** thread (70304165, 0, 12288) *** In G1: T4 -> T9; 58868 avail
+   TCB addr 43E6A000
+   TCB_PC = 70304165
+    stack = 70386000 .. 70389000 ( 12 KB)
+
+--Duplicated library ID 25
+ lib 25, data: 6140 bytes, addr: 40399040
+PIC lib 25 code:[70460000..70465000],18282
+PIC lib 25 data:[70465000..70467000],6140
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 4039e040
+PIC lib 25 code:[70467000..70469000],5458
+PIC lib 25 data:[70469000..7046A000],4
+--Duplicated library ID 25
+ lib 25, data: 4880 bytes, addr: 403a0040
+PIC lib 25 code:[7046A000..7046E000],13634
+PIC lib 25 data:[7046E000..70470000],4880
+ lib 24, data: 5936 bytes, addr: 403a4040
+PIC lib 24 code:[70470000..70476000],22608
+PIC lib 24 data:[70476000..70478000],5936
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 403aa040
+PIC lib 25 code:[70478000..7047C000],12980
+PIC lib 25 data:[7047C000..7047D000],12
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 403ae040
+PIC lib 25 code:[7047D000..70480000],8652
+PIC lib 25 data:[70480000..70481000],4
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+SetCurrentStrFileName,Lang = 1SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName, Filename-  CTLSEngl.msg
+SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName,hdl = 200ulValidateStringFont,font file - ,Lang - 1  lib 25, data: 1349 bytes, addr: 403b1040
+PIC lib 25 code:[70470000..7047D000],49976
+PIC lib 25 data:[7047D000..7047E000],1349
+
+*** thread (7043128D, 0, 20480) *** In G46: T5 -> T10; 58648 avail
+   TCB addr 43D09000
+   TCB_PC = 7043128D
+    stack = 7047E000 .. 70483000 ( 20 KB)
+
+  Device Name(0): /DEV/COM2VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+
+*** thread (704487A9, 8, 4096) *** In G46: T8 -> T11; 58636 avail
+   TCB addr 43D02000
+   TCB_PC = 704487A9
+    stack = 70481000 .. 70482000 (  4 KB)
+
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+Task 10 exit(0): 409 ms, 111 turns
+unload_DLL(70470060)
+  Device Name(1): /DEV/COM2  Device Name(2): /DEV/COM2  Device Name(3): /DEV/COM3  Device Name(4): /DEV/COM3
+SVC_RESTART ( S:+ )
+
+Active at 581722
+T1 at 43EAB000 sts=0 ms=482    ct=432      pc=70420420 sp=7041FB50
+T2 at 43EA1000 sts=1 ms=2      ct=6        pc=70420752 sp=7041F8E0
+T3 at 43E73000 sts=1 ms=0      ct=3        pc=704041C2 sp=70413FE0
+T4 at 43E67000 sts=1 ms=54     ct=14       pc=70420260 sp=7041FDB8
+T5 at 43DC7000 sts=1 ms=259    ct=36       pc=70420538 sp=7041ED70
+T6 at 43D88000 sts=1 ms=55     ct=8        pc=70420326 sp=7041FD98
+T7 at 43D3F000 sts=1 ms=1      ct=8        pc=704222FA sp=70412FC8
+T8 at 43D3B000 sts=1 ms=439    ct=165      pc=70422346 sp=7041FCE0
+T9 at 43E6A000 sts=1 ms=2      ct=9        pc=703041C2 sp=70388FE0
+T11 at 43D02000 sts=1 ms=0      ct=1        pc=7044880A sp=70481F80
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:297 sts:0 last:40000000 raw:8 ena:0 T=4294895058
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  30 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   7 files using    38 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=99630 R=338377 E=2523 FC=61652
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 331 (38.1 C)
+Coin Cell Voltage: 886 (3117 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301061304130.852
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, S:+) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4562)
+Reset at 201301061304130
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_zap(1,FFFE,3) P=8002 G=0
+DZ: remove(I:CESMPL.P7S, 1)
+DZ: remove(I:CESMPL.OUT, 1)
+DZ: remove(I:VXCEHW.INI, 1)
+DZ: remove(I:CESMPL.OUT.SIG, 1)
+DZ: remove(I:DDI_GPRS.INI, 1)
+dir_zap -> 5 files
+dir_zap(2,FFFE,0) P=8002 G=0
+dir_zap -> 0 files
+
+SVC_RESTART (  )
+
+Active at 26461
+T1 at 43EAB000 sts=0 ms=134    ct=481      pc=70422208 sp=7041FAE0
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:298 sts:0 last:40000000 raw:8 ena:0 T=4294895056
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  25 files using    88 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=99667 R=338794 E=2524 FC=61679
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 109 ms, 2596 turns
+kill_threads PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:PEDGRDFA.OUT, P7S.+++         ) *** In G1: T1 -> T2 at 400E8040; 61464 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420084
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422054 (84 bytes)
+     heap = 70422054 .. 70425000 (12204 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Copy S:CERTFILE.SYS to /CERTFILE.SYS
+DupCert: tempfilesize = 20662
+
+SVC_RESTART (  )
+
+Active at 7865
+T1 at 43EAB000 sts=1 ms=205    ct=361      pc=7042D5B2 sp=7041FBA0
+T2 at 43EA1000 sts=0 ms=159    ct=14       pc=704215B8 sp=7041FC20
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:300 sts:0 last:40000000 raw:8 ena:0 T=4294894999
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  28 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=100092 R=340317 E=2530 FC=61641
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 330 (38.8 C)
+Coin Cell Voltage: 879 (3093 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301061308280.485
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, ) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4526)
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+Reset at 201301061308280
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 108 ms, 2596 turns
+kill_threads 
+*** run (F:#SEMTEK.OUT, ) *** In G45: T1 -> T2 at 40294040; 61232 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70434000 (80 KB)
+     data = 70434000 .. 70437790 (14224 bytes)
+     heap = 70437790 .. 7044C000 (84080 bytes)
+    stack = 7040C000 .. 7041FE00 (80 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** run (N:VxEOS.OUT, ) *** In G46: T1 -> T3 at 402A8040; 61180 KB avail
+   TCB addr 43E73000
+   TCB_PC = 70420075
+     code = 70420000 .. 70421000 (4 KB)
+     data = 70421000 .. 70421010 (16 bytes)
+     heap = 70421010 .. 70424000 (12272 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+VXEOS.OUT Ver 1.0.0.5
+VxEOS - Terminal Serial Number[528-900-899]
+VxEOS - Dev File Serial Number[NOT-UNL-OCK]
+PIC lib 18 code:[70300000..70306000],22690
+PIC lib 18 data:[70306000..70307000],44
+PIC lib 29 code:[70307000..70370000],427536
+PIC lib 29 data:[70370000..70383000],77036
+PIC lib 30 code:[70383000..70385000],8068
+PIC lib 30 data:[70385000..70386000],57
+
+*** run (CESMPL.OUT, ) *** In G1: T1 -> T4 at 402A9040; 60064 KB avail
+   TCB addr 43E67000
+   TCB_PC = 704200A5
+     code = 70420000 .. 70426000 (24 KB)
+     data = 70426000 .. 70426158 (344 bytes)
+     heap = 70426158 .. 70470000 (302760 bytes)
+    stack = 703E2000 .. 7041FE00 (248 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - Copied Config N:46/CONFIG.SYS, rc=0 errno=0
+VxEOS - Processing N:46/VXEOSC.MAN ...
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VXCE.out, ) *** In G46: T3 -> T5 at 40320040; 59672 KB avail
+   TCB addr 43DC7000
+   TCB_PC = 704200A5
+     code = 70420000 .. 7043D000 (116 KB)
+     data = 7043E000 .. 7043E368 (872 bytes)
+     heap = 7043E368 .. 70470000 (203928 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+VxEOS - run(N:46/VXCE.out, NULL). retVal[5], errno[0]
+SMF found: N:/NET.LIB, 4033e000
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+SMF found: N:/SSL.LIB, 402af000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 29 code:[70464000..704CD000],427536
+PIC lib 29 data:[704CD000..704E0000],77036
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VxNCP.out, ) *** In G46: T3 -> T6 at 40344040; 59292 KB avail
+   TCB addr 43D89000
+   TCB_PC = 704200B5
+     code = 70420000 .. 70436000 (88 KB)
+     data = 70436000 .. 70438768 (10088 bytes)
+     heap = 70438768 .. 70464000 (178328 bytes)
+    stack = 7041D000 .. 7041FE00 (12 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - run(N:46/VxNCP.out, NULL). retVal[6], errno[0]
+SMF found: N:/ELOG.LIB, 4031e000
+ABS lib 3 code:[70500000..70503000],9321
+ABS lib 3 data:[70503000..70505000],5312
+PIC lib 4 code:[70400000..70405000],18828
+PIC lib 4 data:[70405000..70406000],1928
+PIC lib 5 code:[70438000..70441000],36414
+PIC lib 5 data:[70441000..70446000],18256
+PIC lib 6 code:[70406000..7040A000],12383
+PIC lib 6 data:[7040A000..7040B000],828
+PIC lib 7 code:[7040B000..70411000],22432
+PIC lib 7 data:[70411000..70412000],3670
+PIC lib 27 code:[70446000..7044A000],12580
+PIC lib 27 data:[7044A000..7044C000],7368
+PIC lib 30 code:[7044C000..7044E000],8068
+PIC lib 30 data:[7044E000..7044F000],57
+
+*** run (N:46/VxCTLS.out, ) *** In G46: T3 -> T7 at 4035A040; 58952 KB avail
+   TCB addr 43D3F000
+   TCB_PC = 704200E5
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 704365E0 (13792 bytes)
+     heap = 704365E0 .. 70438000 (6688 bytes)
+    stack = 70413000 .. 7041FE00 (52 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (7042219F, 0, 12288) *** In G46: T5 -> T8; 58936 avail
+   TCB addr 43D1D000
+   TCB_PC = 7042219F
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+VXCTLS:F:ctlsapp.c|L:00439|Start
+VxEOS - run(N:46/VxCTLS.out, NULL). retVal[7], errno[0]
+Task 3 exit(0): 380 ms, 7 turns
+kill_threads 
+*** thread (70404165, 0, 12288) *** In G46: T6 -> T3; 58956 avail
+   TCB addr 43E73000
+   TCB_PC = 70404165
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+ lib 25, data: 4 bytes, addr: 4038c040
+PIC lib 25 code:[7044F000..70450000],3924
+PIC lib 25 data:[70450000..70451000],4
+--Duplicated library ID 25
+ lib 25, data: 288 bytes, addr: 4038d040
+PIC lib 25 code:[70451000..70455000],14398
+PIC lib 25 data:[70455000..70456000],288
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40391040
+PIC lib 25 code:[70456000..7045A000],13332
+PIC lib 25 data:[7045A000..7045B000],12
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40395040
+PIC lib 25 code:[7045B000..7045F000],14852
+PIC lib 25 data:[7045F000..70460000],12
+
+*** thread (70304165, 0, 12288) *** In G1: T4 -> T9; 58868 avail
+   TCB addr 43E68000
+   TCB_PC = 70304165
+    stack = 70386000 .. 70389000 ( 12 KB)
+
+--Duplicated library ID 25
+ lib 25, data: 6140 bytes, addr: 40399040
+PIC lib 25 code:[70460000..70465000],18282
+PIC lib 25 data:[70465000..70467000],6140
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 4039e040
+PIC lib 25 code:[70467000..70469000],5458
+PIC lib 25 data:[70469000..7046A000],4
+--Duplicated library ID 25
+ lib 25, data: 4880 bytes, addr: 403a0040
+PIC lib 25 code:[7046A000..7046E000],13634
+PIC lib 25 data:[7046E000..70470000],4880
+ lib 24, data: 5936 bytes, addr: 403a4040
+PIC lib 24 code:[70470000..70476000],22608
+PIC lib 24 data:[70476000..70478000],5936
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 403aa040
+PIC lib 25 code:[70478000..7047C000],12980
+PIC lib 25 data:[7047C000..7047D000],12
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 403ae040
+PIC lib 25 code:[7047D000..70480000],8652
+PIC lib 25 data:[70480000..70481000],4
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+SetCurrentStrFileName,Lang = 1SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName, Filename-  CTLSEngl.msg
+SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName,hdl = 200ulValidateStringFont,font file - ,Lang - 1  lib 25, data: 1349 bytes, addr: 403b1040
+PIC lib 25 code:[70470000..7047D000],49976
+PIC lib 25 data:[7047D000..7047E000],1349
+
+*** thread (7043128D, 0, 20480) *** In G46: T5 -> T10; 58648 avail
+   TCB addr 43D09000
+   TCB_PC = 7043128D
+    stack = 7047E000 .. 70483000 ( 20 KB)
+
+-----------------------------------ListNWIF-----------------------------------  Device Name: /DEV/COM2
+  Comm Tech: GPRS
+  Device Driver Name: GPCTMC55
+  Handle: 0
+  Run State: 1
+  Startup Mode: 0
+  Device Driver Name(0): GPCTMC55-----------------------------------VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+
+*** thread (704487A9, 7, 4096) *** In G46: T7 -> T11; 58636 avail
+   TCB addr 43D02000
+   TCB_PC = 704487A9
+    stack = 70481000 .. 70482000 (  4 KB)
+
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+  Device Name: /DEV/COM2
+  Comm Tech: PPP/GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 2
+  Handle: 1
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------  Device Name: /DEV/COM2
+  Comm Tech: GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 3
+  Handle: 2
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------  Device Name: /DEV/COM3
+  Comm Tech: PPP/Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 2
+  Handle: 3
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------  Device Name: /DEV/COM3
+  Comm Tech: Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 3
+  Handle: 4
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+SVC_RESTART ( S:+ )
+
+Active at 971772
+T1 at 43EAB000 sts=0 ms=483    ct=432      pc=70420420 sp=7041FB50
+T2 at 43EA1000 sts=1 ms=2      ct=6        pc=70420752 sp=7041F8E0
+T3 at 43E73000 sts=1 ms=0      ct=3        pc=704041C2 sp=70413FE0
+T4 at 43E67000 sts=1 ms=116    ct=19       pc=704202E0 sp=7041FD80
+T5 at 43DC7000 sts=1 ms=261    ct=37       pc=70420538 sp=7041ED70
+T6 at 43D89000 sts=1 ms=55     ct=8        pc=70420326 sp=7041FD98
+T7 at 43D3F000 sts=1 ms=436    ct=165      pc=70422346 sp=7041FCE0
+T8 at 43D1D000 sts=1 ms=1      ct=8        pc=704222FA sp=70412FC8
+T9 at 43E68000 sts=1 ms=3      ct=9        pc=703041C2 sp=70388FE0
+T11 at 43D02000 sts=1 ms=0      ct=1        pc=7044880A sp=70481F80
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:305 sts:0 last:40000000 raw:8 ena:0 T=4294895064
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  30 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   7 files using    38 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=101175 R=346129 E=2547 FC=61652
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 330 (38.8 C)
+Coin Cell Voltage: 878 (3089 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301061328550.947
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+Reset at 201301061328550
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, S:+) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4518)
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_zap(1,FFFE,3) P=8002 G=0
+DZ: remove(I:CESMPL.P7S, 1)
+DZ: remove(I:CESMPL.OUT, 1)
+DZ: remove(I:VXCEHW.INI, 1)
+DZ: remove(I:CESMPL.OUT.SIG, 1)
+DZ: remove(I:DDI_GPRS.INI, 1)
+dir_zap -> 5 files
+dir_zap(2,FFFE,0) P=8002 G=0
+dir_zap -> 0 files
+
+SVC_RESTART (  )
+
+Active at 22424
+T1 at 43EAB000 sts=0 ms=139    ct=434      pc=70422208 sp=7041FAE0
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:306 sts:0 last:40000000 raw:8 ena:0 T=4294894987
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  25 files using    88 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=101212 R=346555 E=2548 FC=61679
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 112 ms, 2596 turns
+kill_threads PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:PEDGRDFA.OUT, P7S.+++         ) *** In G1: T1 -> T2 at 400E8040; 61464 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420084
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422054 (84 bytes)
+     heap = 70422054 .. 70425000 (12204 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Copy S:CERTFILE.SYS to /CERTFILE.SYS
+DupCert: tempfilesize = 20662
+
+SVC_RESTART (  )
+
+Active at 7901
+T1 at 43EAB000 sts=1 ms=204    ct=361      pc=7042D5B2 sp=7041FBA0
+T2 at 43EA1000 sts=0 ms=159    ct=14       pc=704215B8 sp=7041FC20
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:308 sts:0 last:40000000 raw:8 ena:0 T=4294895061
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  28 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=101637 R=348096 E=2554 FC=61641
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 330 (38.8 C)
+Coin Cell Voltage: 882 (3103 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301061331280.527
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, ) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4589)
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+Reset at 201301061331280
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 113 ms, 2596 turns
+kill_threads 
+*** run (F:#SEMTEK.OUT, ) *** In G45: T1 -> T2 at 40294040; 61232 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70434000 (80 KB)
+     data = 70434000 .. 70437790 (14224 bytes)
+     heap = 70437790 .. 7044C000 (84080 bytes)
+    stack = 7040C000 .. 7041FE00 (80 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** run (N:VxEOS.OUT, ) *** In G46: T1 -> T3 at 402A8040; 61180 KB avail
+   TCB addr 43E73000
+   TCB_PC = 70420075
+     code = 70420000 .. 70421000 (4 KB)
+     data = 70421000 .. 70421010 (16 bytes)
+     heap = 70421010 .. 70424000 (12272 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+VXEOS.OUT Ver 1.0.0.5
+VxEOS - Terminal Serial Number[528-900-899]
+VxEOS - Dev File Serial Number[NOT-UNL-OCK]
+PIC lib 18 code:[70300000..70306000],22690
+PIC lib 18 data:[70306000..70307000],44
+PIC lib 29 code:[70307000..70370000],427536
+PIC lib 29 data:[70370000..70383000],77036
+PIC lib 30 code:[70383000..70385000],8068
+PIC lib 30 data:[70385000..70386000],57
+
+*** run (CESMPL.OUT, ) *** In G1: T1 -> T4 at 402A9040; 60064 KB avail
+   TCB addr 43E67000
+   TCB_PC = 704200A5
+     code = 70420000 .. 70426000 (24 KB)
+     data = 70426000 .. 70426158 (344 bytes)
+     heap = 70426158 .. 70470000 (302760 bytes)
+    stack = 703E2000 .. 7041FE00 (248 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - Copied Config N:46/CONFIG.SYS, rc=0 errno=0
+VxEOS - Processing N:46/VXEOSC.MAN ...
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VXCE.out, ) *** In G46: T3 -> T5 at 40320040; 59672 KB avail
+   TCB addr 43DC7000
+   TCB_PC = 704200A5
+     code = 70420000 .. 7043D000 (116 KB)
+     data = 7043E000 .. 7043E368 (872 bytes)
+     heap = 7043E368 .. 70470000 (203928 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+VxEOS - run(N:46/VXCE.out, NULL). retVal[5], errno[0]
+SMF found: N:/NET.LIB, 4033e000
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+SMF found: N:/SSL.LIB, 402af000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 29 code:[70464000..704CD000],427536
+PIC lib 29 data:[704CD000..704E0000],77036
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VxNCP.out, ) *** In G46: T3 -> T6 at 40344040; 59292 KB avail
+   TCB addr 43D89000
+   TCB_PC = 704200B5
+     code = 70420000 .. 70436000 (88 KB)
+     data = 70436000 .. 70438768 (10088 bytes)
+     heap = 70438768 .. 70464000 (178328 bytes)
+    stack = 7041D000 .. 7041FE00 (12 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - run(N:46/VxNCP.out, NULL). retVal[6], errno[0]
+SMF found: N:/ELOG.LIB, 4031e000
+ABS lib 3 code:[70500000..70503000],9321
+ABS lib 3 data:[70503000..70505000],5312
+PIC lib 4 code:[70400000..70405000],18828
+PIC lib 4 data:[70405000..70406000],1928
+PIC lib 5 code:[70438000..70441000],36414
+PIC lib 5 data:[70441000..70446000],18256
+PIC lib 6 code:[70406000..7040A000],12383
+PIC lib 6 data:[7040A000..7040B000],828
+PIC lib 7 code:[7040B000..70411000],22432
+PIC lib 7 data:[70411000..70412000],3670
+PIC lib 27 code:[70446000..7044A000],12580
+PIC lib 27 data:[7044A000..7044C000],7368
+PIC lib 30 code:[7044C000..7044E000],8068
+PIC lib 30 data:[7044E000..7044F000],57
+
+*** run (N:46/VxCTLS.out, ) *** In G46: T3 -> T7 at 4035A040; 58952 KB avail
+   TCB addr 43D3F000
+   TCB_PC = 704200E5
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 704365E0 (13792 bytes)
+     heap = 704365E0 .. 70438000 (6688 bytes)
+    stack = 70413000 .. 7041FE00 (52 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (7042219F, 0, 12288) *** In G46: T5 -> T8; 58936 avail
+   TCB addr 43D1D000
+   TCB_PC = 7042219F
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+VXCTLS:F:ctlsapp.c|L:00439|Start
+VxEOS - run(N:46/VxCTLS.out, NULL). retVal[7], errno[0]
+Task 3 exit(0): 380 ms, 7 turns
+kill_threads 
+*** thread (70404165, 0, 12288) *** In G46: T6 -> T3; 58956 avail
+   TCB addr 43E73000
+   TCB_PC = 70404165
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+ lib 25, data: 4 bytes, addr: 4038c040
+PIC lib 25 code:[7044F000..70450000],3924
+PIC lib 25 data:[70450000..70451000],4
+--Duplicated library ID 25
+ lib 25, data: 288 bytes, addr: 4038d040
+PIC lib 25 code:[70451000..70455000],14398
+PIC lib 25 data:[70455000..70456000],288
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40391040
+PIC lib 25 code:[70456000..7045A000],13332
+PIC lib 25 data:[7045A000..7045B000],12
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40395040
+PIC lib 25 code:[7045B000..7045F000],14852
+PIC lib 25 data:[7045F000..70460000],12
+
+*** thread (70304165, 0, 12288) *** In G1: T4 -> T9; 58868 avail
+   TCB addr 43E68000
+   TCB_PC = 70304165
+    stack = 70386000 .. 70389000 ( 12 KB)
+
+--Duplicated library ID 25
+ lib 25, data: 6140 bytes, addr: 40399040
+PIC lib 25 code:[70460000..70465000],18282
+PIC lib 25 data:[70465000..70467000],6140
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 4039e040
+PIC lib 25 code:[70467000..70469000],5458
+PIC lib 25 data:[70469000..7046A000],4
+--Duplicated library ID 25
+ lib 25, data: 4880 bytes, addr: 403a0040
+PIC lib 25 code:[7046A000..7046E000],13634
+PIC lib 25 data:[7046E000..70470000],4880
+ lib 24, data: 5936 bytes, addr: 403a4040
+PIC lib 24 code:[70470000..70476000],22608
+PIC lib 24 data:[70476000..70478000],5936
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 403aa040
+PIC lib 25 code:[70478000..7047C000],12980
+PIC lib 25 data:[7047C000..7047D000],12
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 403ae040
+PIC lib 25 code:[7047D000..70480000],8652
+PIC lib 25 data:[70480000..70481000],4
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+SetCurrentStrFileName,Lang = 1SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName, Filename-  CTLSEngl.msg
+SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName,hdl = 200ulValidateStringFont,font file - ,Lang - 1  lib 25, data: 1349 bytes, addr: 403b1040
+PIC lib 25 code:[70470000..7047D000],49976
+PIC lib 25 data:[7047D000..7047E000],1349
+
+*** thread (7043128D, 0, 20480) *** In G46: T5 -> T10; 58648 avail
+   TCB addr 43D09000
+   TCB_PC = 7043128D
+    stack = 7047E000 .. 70483000 ( 20 KB)
+
+-----------------------------------
+ListNWIF
+-----------------------------------
+  Device Name: /DEV/COM2
+  Comm Tech: GPRS
+  Device Driver Name: GPCTMC55
+  Device Driver Type: 2
+  Handle: 0
+  Run State: 1
+  Startup Mode: 0
+-----------------------------------
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+
+*** thread (704487A9, 7, 4096) *** In G46: T7 -> T11; 58636 avail
+   TCB addr 43D02000
+   TCB_PC = 704487A9
+    stack = 70481000 .. 70482000 (  4 KB)
+
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+  Device Name: /DEV/COM2
+  Comm Tech: PPP/GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 2
+  Handle: 1
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------
+Task 10 exit(0): 388 ms, 110 turns
+unload_DLL(70470060)
+  Device Name: /DEV/COM2
+  Comm Tech: GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 3
+  Handle: 2
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------
+  Device Name: /DEV/COM3
+  Comm Tech: PPP/Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 2
+  Handle: 3
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+  Device Name: /DEV/COM3
+  Comm Tech: Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 3
+  Handle: 4
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+C = 704200A5
+     code = 70420000 .. 7043D000 (116 KB)
+     data = 7043E000 .. 7043E368 (872 bytes)
+     heap = 7043E368 .. 70470000 (203928 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+VxEOS - run(N:46/VXCE.out, NULL). retVal[5], errno[0]
+SMF found: N:/NET.LIB, 4033e000
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+SMF found: N:/SSL.LIB, 402af000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 29 code:[70464000..704CD000],427536
+PIC lib 29 data:[704CD000..704E0000],77036
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VxNCP.out, ) *** In G46: T3 -> T6 at 40344040; 59292 KB avail
+   TCB addr 43D89000
+   TCB_PC = 704200B5
+     code = 70420000 .. 70436000 (88 KB)
+     data = 70436000 .. 70438768 (10088 bytes)
+     heap = 70438768 .. 70464000 (178328 bytes)
+    stack = 7041D000 .. 7041FE00 (12 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - run(N:46/VxNCP.out, NULL). retVal[6], errno[0]
+SMF found: N:/ELOG.LIB, 4031e000
+ABS lib 3 code:[70500000..70503000],9321
+ABS lib 3 data:[70503000..70505000],5312
+PIC lib 4 code:[70400000..70405000],18828
+PIC lib 4 data:[70405000..70406000],1928
+PIC lib 5 code:[70438000..70441000],36414
+PIC lib 5 data:[70441000..70446000],18256
+PIC lib 6 code:[70406000..7040A000],12383
+PIC lib 6 data:[7040A000..7040B000],828
+PIC lib 7 code:[7040B000..70411000],22432
+PIC lib 7 data:[70411000..70412000],3670
+PIC lib 27 code:[70446000..7044A000],12580
+PIC lib 27 data:[7044A000..7044C000],7368
+PIC lib 30 code:[7044C000..7044E000],8068
+PIC lib 30 data:[7044E000..7044F000],57
+
+*** run (N:46/VxCTLS.out, ) *** In G46: T3 -> T7 at 4035A040; 58952 KB avail
+   TCB addr 43D3F000
+   TCB_PC = 704200E5
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 704365E0 (13792 bytes)
+     heap = 704365E0 .. 70438000 (6688 bytes)
+    stack = 70413000 .. 7041FE00 (52 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (7042219F, 0, 12288) *** In G46: T5 -> T8; 58936 avail
+   TCB addr 43D1D000
+   TCB_PC = 7042219F
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+VXCTLS:F:ctlsapp.c|L:00439|Start
+VxEOS - run(N:46/VxCTLS.out, NULL). retVal[7], errno[0]
+Task 3 exit(0): 380 ms, 7 turns
+kill_threads 
+*** thread (70404165, 0, 12288) *** In G46: T6 -> T3; 58956 avail
+   TCB addr 43E73000
+   TCB_PC = 70404165
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+ lib 25, data: 4 bytes, addr: 4038c040
+PIC lib 25 code:[7044F000..70450000],3924
+PIC lib 25 data:[70450000..70451000],4
+--Duplicated library ID 25
+ lib 25, data: 288 bytes, addr: 4038d040
+PIC lib 25 code:[70451000..70455000],14398
+PIC lib 25 data:[70455000..70456000],288
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40391040
+PIC lib 25 code:[70456000..7045A000],13332
+PIC lib 25 data:[7045A000..7045B000],12
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40395040
+PIC lib 25 code:[7045B000..7045F000],14852
+PIC lib 25 data:[7045F000..70460000],12
+
+*** thread (70304165, 0, 12288) *** In G1: T4 -> T9; 58868 avail
+   TCB addr 43E68000
+   TCB_PC = 70304165
+    stack = 70386000 .. 70389000 ( 12 KB)
+
+--Duplicated library ID 25
+ lib 25, data: 6140 bytes, addr: 40399040
+PIC lib 25 code:[70460000..70465000],18282
+PIC lib 25 data:[70465000..70467000],6140
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 4039e040
+PIC lib 25 code:[70467000..70469000],5458
+PIC lib 25 data:[70469000..7046A000],4
+--Duplicated library ID 25
+ lib 25, data: 4880 bytes, addr: 403a0040
+PIC lib 25 code:[7046A000..7046E000],13634
+PIC lib 25 data:[7046E000..70470000],4880
+ lib 24, data: 5936 bytes, addr: 403a4040
+PIC lib 24 code:[70470000..70476000],22608
+PIC lib 24 data:[70476000..70478000],5936
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 403aa040
+PIC lib 25 code:[70478000..7047C000],12980
+PIC lib 25 data:[7047C000..7047D000],12
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 403ae040
+PIC lib 25 code:[7047D000..70480000],8652
+PIC lib 25 data:[70480000..70481000],4
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+SetCurrentStrFileName,Lang = 1SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName, Filename-  CTLSEngl.msg
+SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName,hdl = 200ulValidateStringFont,font file - ,Lang - 1  lib 25, data: 1349 bytes, addr: 403b1040
+PIC lib 25 code:[70470000..7047D000],49976
+PIC lib 25 data:[7047D000..7047E000],1349
+
+*** thread (7043128D, 0, 20480) *** In G46: T5 -> T10; 58648 avail
+   TCB addr 43D09000
+   TCB_PC = 7043128D
+    stack = 7047E000 .. 70483000 ( 20 KB)
+
+-----------------------------------
+ListNWIF
+-----------------------------------
+  Device Name: /DEV/COM2
+  Comm Tech: GPRS
+  Device Driver Name: GPCTMC55
+  Device Driver Type: 2
+  Handle: 0
+  Run State: 1
+  Startup Mode: 0
+-----------------------------------
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+
+*** thread (704487A9, 7, 4096) *** In G46: T7 -> T11; 58636 avail
+   TCB addr 43D02000
+   TCB_PC = 704487A9
+    stack = 70481000 .. 70482000 (  4 KB)
+
+com_set_radio_sigs: Attempting to disable radio power
+com_set_radio_sigs: Attempting to disable radio power
+  Device Name: /DEV/COM2
+  Comm Tech: PPP/GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 2
+  Handle: 1
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------
+com_set_radio_sigs: Attempting to disable radio power
+  Device Name: /DEV/COM2
+  Comm Tech: GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 3
+  Handle: 2
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------
+  Device Name: /DEV/COM3
+  Comm Tech: PPP/Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 2
+  Handle: 3
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+Task 10 exit(0): 382 ms, 106 turns
+unload_DLL(70470060)
+  Device Name: /DEV/COM3
+  Comm Tech: Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 3
+  Handle: 4
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+
+SVC_RESTART ( S:+ )
+
+Active at 1196024
+T1 at 43EAB000 sts=0 ms=485    ct=432      pc=70420420 sp=7041FB50
+T2 at 43EA1000 sts=1 ms=2      ct=6        pc=70420752 sp=7041F8E0
+T3 at 43E73000 sts=1 ms=1      ct=3        pc=704041C2 sp=70413FE0
+T4 at 43E67000 sts=1 ms=117    ct=20       pc=70420260 sp=7041FDB8
+T5 at 43DC7000 sts=1 ms=260    ct=37       pc=70420538 sp=7041ED70
+T6 at 43D89000 sts=1 ms=56     ct=8        pc=70420326 sp=7041FD98
+T7 at 43D3F000 sts=1 ms=441    ct=165      pc=70422346 sp=7041FCE0
+T8 at 43D1D000 sts=1 ms=2      ct=8        pc=704222FA sp=70412FC8
+T9 at 43E68000 sts=1 ms=2      ct=9        pc=703041C2 sp=70388FE0
+T11 at 43D02000 sts=1 ms=0      ct=1        pc=7044880A sp=70481F80
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:313 sts:0 last:40000000 raw:8 ena:0 T=4294895005
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  30 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   7 files using    38 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=102720 R=353953 E=2571 FC=61652
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 330 (38.8 C)
+Coin Cell Voltage: 881 (3100 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301062008060.850
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, S:+) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4525)
+Reset at 201301062008060
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+
+SVC_RESTART (  )
+
+Active at 3699
+T1 at 43EAB000 sts=0 ms=36     ct=194      pc=70422208 sp=7041FB68
+RAM at [ 40000000 .. 44000000 )
+
+PF @ 0x0 via:3 cnt:314 sts:0 last:40000000 raw:8 ena:0 T=4294895289
+
+
+
+*************** VERIX initializing ************** 07/08/2011 QT680015
+HEAP_MGR
+UNCACHED: 100 KB at 53FDF000
+DVIC_MGR
+NF values: CYC=0 MEMI=619 MEMC=1C3B
+NAND_read_id: AD B1 00 55
+NAND size=128 MB, AC=4, MW=16, cycles=245A56
+>> BAD [365P]
+Drive(I:) has  30 files using   118 KB
+Drive(F:) has   3 files using    82 KB
+Drive(S:) has   6 files using    36 KB
+Drive(N:) has 150 files using  2022 KB
+SC[1] at 43FD8EC4
+init_sdram: FeBase at 43FD8BF4 for max 30 files
+NAND totals: W=102722 R=354341 E=2571 FC=61650
+SC[128] at 43F987F4
+GLOBAL_debug_task=255..255
+CIB ver 26800000002 dated 07/27/2010 from SBI
+MIB dated 07/04/2012 at 32:0 OK: stored at 402050F0
+FILE_MGR S,I,F
+FILE_MGR T
+GLOBAL at 180000 size 54540 bytes
+*HEAP=64 KB for sys_malloc
+PROFILE 1B8000 -> 1B801C: 128 entries
+Using T:LOADLIST.SYS (0)
+NONVOL: 1880 bytes at 43F878A8
+  T:SYS.LIB at 400D1040: 51984 bytes
+  *TIME=30
+  T:schedulr.bin  C=40020058 D=43F87264 ( 1604) init=0
+  T:_crypto.bin   C=40029A74 D=43F86C4C ( 1560) init=0
+    RTC direct=N
+  T:clk_2101.bin  C=400349F0 D=43F86C4C (    0) init=0
+  T:_upgrade.bin  C=400353CC D=43F86C3C (   16) init=0
+  T:_buf_mgr.bin  C=400369A4 D=43F82B6C (16592) init=0
+  T:gpm836a1.bin  C=40036FD0 D=43F37A68 (307460) init=0
+  T:lcd11301.bin  C=40039120 D=43F37A68 (    0) init=-1
+  T:gwms8174.bin  C=4003A2EC D=43F37A68 (    0) init=-1
+  T:pmic.bin      C=4003B45C D=43F37A68 (    0) init=0
+  T:console.bin   C=4003B694 D=43EFD00C (240220) init=0
+  T:backlite.bin  C=400403E8 D=43EFD008 (    4) init=0
+  T:bpr.bin       C=4004097C D=43EFD008 (    0) init=0
+  T:com1_011.bin  C=40040B5C D=43EFD008 (    0) init=-1
+  T:com2_011.bin  C=40042068 D=43EFA2D4 (11572) init=0
+  T:com7_2wr.bin  C=400455F4 D=43EFA2D4 (    0) init=-1
+  T:com3_011.bin  C=40046780 D=43EFA2D4 (    0) init=-1
+  T:vicexgp4.bin  C=400492A8 D=43EFA2C4 (   16) init=0
+  T:magadc.bin    C=40049498 D=43EF4F84 (21312) init=0
+  T:pipe_mgr.bin  C=4004D7E0 D=43EF2B80 ( 9220) init=0
+SoC Temperature: 330 (38.8 C)
+Coin Cell Voltage: 875 (3079 mV)
+  T:security.bin  C=4004E180 D=43EF1C58 ( 3880) init=0
+  T:rkl.bin       C=40057560 D=43EF1C54 (    4) init=0
+  T:usb_host.bin  C=4005EF48 D=43EF15B0 ( 1700) init=0
+  T:usbd_011.bin  C=4006289C D=43ED2E1C (124820) init=0
+  T:usb_disk.bin  C=400658BC D=43ED11E8 ( 7220) init=0
+  T:com6_usb.bin  C=40068974 D=43ECF174 ( 8308) init=0
+  T:usbser.bin    C=4006B5AC D=43ECF130 (   68) init=0
+  T:sdi_host.bin  C=4006D4B4 D=43ECECFC ( 1076) init=0
+  T:sd_disk.bin   C=4006DC44 D=43ECCEF0 ( 7692) init=0
+Smart Card Init
+  T:icc1.bin      C=40070FE0 D=43ECB0B8 ( 7736) init=0
+
+CTLS Config ID FF = Expected FF
+
+CIB:26800000002
+PN512 ChipID = 80
+
+Bad hdl=-2: T=0
+CTLSHW RXTHRESHOLDREGA=0xFFFFFFFF(-1)
+CTLSHW DEMODREGA=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGA=0xFFFFFFFF(-1)
+CTLSHW RXTHRESHOLDREGB=0xFFFFFFFF(-1)
+CTLSHW DEMODREGB=0xFFFFFFFF(-1)
+CTLSHW RFCFGREGB=0xFFFFFFFF(-1)
+CTLSHW GSNONREGB=0xFFFFFFFF(-1)
+CTLSHW CWGSPREG=0xFFFFFFFF(-1)
+CTLSHW MODGSPREGB=0xFFFFFFFF(-1)
+CTLSHW TERMVARIANT=0xFFFFFFFF(-1)
+
+CTLS Type=34 Port=49 CTLID=49 ConfigID=255
+
+  T:ctls680.bin   C=4007A484 D=43EC7678 (14912) init=0
+
+CTLS Not Installed - Config ID FF != Expected 31
+  T:ctls.bin      C=40088FD0 D=43EC7678 (    0) init=-3
+
+CTLS Not Installed - Config ID FF != Expected 32
+  T:ctls_c2.bin   C=40097E88 D=43EC7678 (    0) init=-3
+  T:iic.bin       C=400A6C68 D=43EC7538 (  320) init=0
+  T:com3_usb.bin  C=400A8A08 D=43EC5458 ( 8416) init=0
+  T:usbax772.bin  C=400AD580 D=43EC53D4 (  132) init=0
+  T:eth_2101.bin  C=400AE850 D=43EC53D4 (    0) init=0
+  T:_info.bin     C=400AFB4C D=43EC53D4 (    0) init=0
+  T:ipp.bin       C=400B1C40 D=43EC5148 (  652) init=0
+  T:tch_scr.bin   C=400B64EC D=43EC4F74 (  468) init=0
+  T:printer.bin   C=400B73D0 D=43EAFB90 (87012) init=0
+  T:usbgen.bin    C=400BE068 D=43EAFA04 (  396) init=0
+  T:d1wire.bin    C=400C1EDC D=43EAF9FC (    8) init=0
+  T:battery.bin   C=400C24DC D=43EAF504 ( 1272) init=0
+Dimming factor is 2 / 8 or about 25 percent
+  T:miscio.bin    C=400C5B2C D=43EAF504 (    0) init=0
+  T:duet_usb.bin  C=400C5E50 D=43EAF504 (    0) init=-1
+  T:cdma_usb.bin  C=400CCE2C D=43EAF504 (    0) init=-1
+--I:wizard.ram    NOT INSTALLED
+tcpip.bin built Jan 17 2011 16:29:57
+  N:tcpip.bin     C=40269040 D=43EAD0E4 ( 9248) init=0
+Debug flags = 0
+GLOBAL.debug_task at 18C2B4: 255
+Enabled at 201301062008090.114
+
+VxCTLS 1.04
+L1NXP v.03.03.00 CS:B204
+
+BACKLIGNT: PMIC controlled, orig level=20 -> level=20
+COM2 module=72
+GPRS SIM watchdog enabled
+PIC lib 1 code:[70400000..70406000],22732
+PIC lib 1 data:[70406000..70407000],2856
+
+*** run (T:VTM_MGR.OUT, ) *** In G1: T0 -> T1 at 400EA040; 61504 KB avail
+   TCB addr 43EAB000
+   TCB_PC = 70420085
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 70433EE0 (3808 bytes)
+     heap = 70433EE0 .. 70436000 (8480 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+raster_prep(400FF1A0: 8x16x256) at 43EA2FE4 (4513)
+slot[1].bCardPres = 0
+slot[2].bCardPres = 1
+slot[3].bCardPres = 1
+slot[4].bCardPres = 1
+slot[5].bCardPres = 0
+
+Smart Card Driver:
+Num Slots 4
+SC_DRVR Build 05
+SCRLIB Ver 2.E   5/2010
+SCRHW  Ver C2   10/2008
+
+Reset at 201301062008090
+SIM Violation: Shutdown GPRS
+Battery SN BA1217303866
+dir_checkall (I:,FFFF)
+dir_checkall (F:,FFFF)
+dir_checkall (S:,FFFF)
+ROM dir_checkall (T:,FFFF) => 0 : FIXME
+
+*** run (T:/TMRESDL.OUT, ) *** In G31: T1 -> T2 at 400FD040; 61472 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70422000 (8 KB)
+     data = 70422000 .. 70422068 (104 bytes)
+     heap = 70422068 .. 70424000 (8088 bytes)
+    stack = 7041E000 .. 7041FE00 (8 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+Task 2 exit(0): 108 ms, 2596 turns
+kill_threads 
+*** run (F:#SEMTEK.OUT, ) *** In G45: T1 -> T2 at 40294040; 61232 KB avail
+   TCB addr 43EA1000
+   TCB_PC = 70420075
+     code = 70420000 .. 70434000 (80 KB)
+     data = 70434000 .. 70437790 (14224 bytes)
+     heap = 70437790 .. 7044C000 (84080 bytes)
+    stack = 7040C000 .. 7041FE00 (80 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** run (N:VxEOS.OUT, ) *** In G46: T1 -> T3 at 402A8040; 61180 KB avail
+   TCB addr 43E73000
+   TCB_PC = 70420075
+     code = 70420000 .. 70421000 (4 KB)
+     data = 70421000 .. 70421010 (16 bytes)
+     heap = 70421010 .. 70424000 (12272 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+VXEOS.OUT Ver 1.0.0.5
+VxEOS - Terminal Serial Number[528-900-899]
+VxEOS - Dev File Serial Number[NOT-UNL-OCK]
+PIC lib 18 code:[70300000..70306000],22690
+PIC lib 18 data:[70306000..70307000],44
+PIC lib 29 code:[70307000..70370000],427536
+PIC lib 29 data:[70370000..70383000],77036
+PIC lib 30 code:[70383000..70385000],8068
+PIC lib 30 data:[70385000..70386000],57
+
+*** run (CESMPL.OUT, ) *** In G1: T1 -> T4 at 402A9040; 60064 KB avail
+   TCB addr 43E67000
+   TCB_PC = 704200A5
+     code = 70420000 .. 70426000 (24 KB)
+     data = 70426000 .. 70426158 (344 bytes)
+     heap = 70426158 .. 70470000 (302760 bytes)
+    stack = 703E2000 .. 7041FE00 (248 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - Copied Config N:46/CONFIG.SYS, rc=0 errno=0
+VxEOS - Processing N:46/VXEOSC.MAN ...
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VXCE.out, ) *** In G46: T3 -> T5 at 40320040; 59672 KB avail
+   TCB addr 43DC7000
+   TCB_PC = 704200A5
+     code = 70420000 .. 7043D000 (116 KB)
+     data = 7043E000 .. 7043E368 (872 bytes)
+     heap = 7043E368 .. 70470000 (203928 bytes)
+    stack = 70419000 .. 7041FE00 (28 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+main:CEIF Version:01.00.06.02
+VxEOS - run(N:46/VXCE.out, NULL). retVal[5], errno[0]
+SMF found: N:/NET.LIB, 4033e000
+SMF found: N:/ELOG.LIB, 4031e000
+SMF found: N:/CEIF.LIB, 40318000
+SMF found: N:/SSL.LIB, 402af000
+PIC lib 18 code:[70400000..70406000],22690
+PIC lib 18 data:[70406000..70407000],44
+PIC lib 28 code:[70407000..7040D000],22449
+PIC lib 28 data:[7040D000..7040E000],3388
+PIC lib 29 code:[70464000..704CD000],427536
+PIC lib 29 data:[704CD000..704E0000],77036
+PIC lib 30 code:[7040E000..70410000],8068
+PIC lib 30 data:[70410000..70411000],57
+
+*** run (N:46/VxNCP.out, ) *** In G46: T3 -> T6 at 40344040; 59288 KB avail
+   TCB addr 43D88000
+   TCB_PC = 704200B5
+     code = 70420000 .. 70436000 (88 KB)
+     data = 70436000 .. 70438768 (10088 bytes)
+     heap = 70438768 .. 70464000 (178328 bytes)
+    stack = 7041D000 .. 7041FE00 (12 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (7042219F, 0, 12288) *** In G46: T5 -> T7; 59272 avail
+   TCB addr 43D3F000
+   TCB_PC = 7042219F
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+main:CEIF Version:01.00.06.02
+SSL library: 1.0.0.15
+VxEOS - run(N:46/VxNCP.out, NULL). retVal[6], errno[0]
+SMF found: N:/ELOG.LIB, 4031e000
+ABS lib 3 code:[70500000..70503000],9321
+ABS lib 3 data:[70503000..70505000],5312
+PIC lib 4 code:[70400000..70405000],18828
+PIC lib 4 data:[70405000..70406000],1928
+PIC lib 5 code:[70438000..70441000],36414
+PIC lib 5 data:[70441000..70446000],18256
+PIC lib 6 code:[70406000..7040A000],12383
+PIC lib 6 data:[7040A000..7040B000],828
+PIC lib 7 code:[7040B000..70411000],22432
+PIC lib 7 data:[70411000..70412000],3670
+PIC lib 27 code:[70446000..7044A000],12580
+PIC lib 27 data:[7044A000..7044C000],7368
+PIC lib 30 code:[7044C000..7044E000],8068
+PIC lib 30 data:[7044E000..7044F000],57
+
+*** run (N:46/VxCTLS.out, ) *** In G46: T3 -> T8 at 4035A040; 58936 KB avail
+   TCB addr 43D3B000
+   TCB_PC = 704200E5
+     code = 70420000 .. 70433000 (76 KB)
+     data = 70433000 .. 704365E0 (13792 bytes)
+     heap = 704365E0 .. 70438000 (6688 bytes)
+    stack = 70413000 .. 7041FE00 (52 KB)
+
+
+SBI Clear SystemUnstableFlag: 
+
+*** thread (70404165, 0, 12288) *** In G46: T6 -> T9; 58908 avail
+   TCB addr 43D16000
+   TCB_PC = 70404165
+    stack = 70411000 .. 70414000 ( 12 KB)
+
+VXCTLS:F:ctlsapp.c|L:00439|Start
+VxEOS - run(N:46/VxCTLS.out, NULL). retVal[8], errno[0]
+Task 3 exit(0): 380 ms, 7 turns
+kill_threads  lib 25, data: 4 bytes, addr: 4038c040
+PIC lib 25 code:[7044F000..70450000],3924
+PIC lib 25 data:[70450000..70451000],4
+--Duplicated library ID 25
+ lib 25, data: 288 bytes, addr: 4038d040
+PIC lib 25 code:[70451000..70455000],14398
+PIC lib 25 data:[70455000..70456000],288
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40391040
+PIC lib 25 code:[70456000..7045A000],13332
+PIC lib 25 data:[7045A000..7045B000],12
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 40395040
+PIC lib 25 code:[7045B000..7045F000],14852
+PIC lib 25 data:[7045F000..70460000],12
+
+*** thread (70304165, 0, 12288) *** In G1: T4 -> T3; 58868 avail
+   TCB addr 43E73000
+   TCB_PC = 70304165
+    stack = 70386000 .. 70389000 ( 12 KB)
+
+--Duplicated library ID 25
+ lib 25, data: 6140 bytes, addr: 40399040
+PIC lib 25 code:[70460000..70465000],18282
+PIC lib 25 data:[70465000..70467000],6140
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 4039e040
+PIC lib 25 code:[70467000..70469000],5458
+PIC lib 25 data:[70469000..7046A000],4
+--Duplicated library ID 25
+ lib 25, data: 4880 bytes, addr: 403a0040
+PIC lib 25 code:[7046A000..7046E000],13634
+PIC lib 25 data:[7046E000..70470000],4880
+ lib 24, data: 5936 bytes, addr: 403a4040
+PIC lib 24 code:[70470000..70476000],22608
+PIC lib 24 data:[70476000..70478000],5936
+--Duplicated library ID 25
+ lib 25, data: 12 bytes, addr: 403aa040
+PIC lib 25 code:[70478000..7047C000],12980
+PIC lib 25 data:[7047C000..7047D000],12
+--Duplicated library ID 25
+ lib 25, data: 4 bytes, addr: 403ae040
+PIC lib 25 code:[7047D000..70480000],8652
+PIC lib 25 data:[70480000..70481000],4
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+SetCurrentStrFileName,Lang = 1SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName, Filename-  CTLSEngl.msg
+SetCurrentStrFileName,Lang = 1GetMsgFileName,00 Filename-  CTLSEngl.msg
+SetCurrentStrFileName,hdl = 201ulValidateStringFont,font file - ,Lang - 1  lib 25, data: 1349 bytes, addr: 403b1040
+PIC lib 25 code:[70470000..7047D000],49976
+PIC lib 25 data:[7047D000..7047E000],1349
+
+*** thread (7043128D, 0, 20480) *** In G46: T5 -> T10; 58648 avail
+   TCB addr 43D09000
+   TCB_PC = 7043128D
+    stack = 7047E000 .. 70483000 ( 20 KB)
+
+-----------------------------------
+ListNWIF
+-----------------------------------
+  Device Name: /DEV/COM2
+  Comm Tech: GPRS
+  Device Driver Name: GPCTMC55
+  Device Driver Type: 2
+  Handle: 0
+  Run State: 1
+  Startup Mode: 0
+-----------------------------------
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+VXCTLS:CTLS.LIB:ER -0001 9|F:ctlssrvuilib.c|L:00091|CRT
+
+*** thread (704487A9, 8, 4096) *** In G46: T8 -> T11; 58636 avail
+   TCB addr 43D02000
+   TCB_PC = 704487A9
+    stack = 70481000 .. 70482000 (  4 KB)
+
+com_set_radio_sigs: Attempting to disable radio power
+  Device Name: /DEV/COM2
+  Comm Tech: PPP/GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 2
+  Handle: 1
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------
+  Device Name: /DEV/COM2
+  Comm Tech: GSM
+  Device Driver Name: GSCTMC55
+  Device Driver Type: 3
+  Handle: 2
+  Run State: 3
+  Startup Mode: 1
+-----------------------------------
+  Device Name: /DEV/COM3
+  Comm Tech: PPP/Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 2
+  Handle: 3
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+com_set_radio_sigs: Attempting to disable radio power
+  Device Name: /DEV/COM3
+  Comm Tech: Dial
+  Device Driver Name: DLSI_ALL
+  Device Driver Type: 3
+  Handle: 4
+  Run State: 2
+  Startup Mode: 1
+-----------------------------------
+com_set_radio_sigs: Attempting to disable radio power
+Task 4 exit(0): 117 ms, 21 turns
+kill_threads Thrd 3 exit:orphan, 1 ms, 9 turns
+Task 10 exit(0): 375 ms, 106 turns
+unload_DLL(70470060)

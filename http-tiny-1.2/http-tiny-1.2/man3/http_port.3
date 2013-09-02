@@ -1,0 +1,658 @@
+.\" WARNING! THIS FILE WAS GENERATED AUTOMATICALLY BY c2man!
+.\" DO NOT EDIT! CHANGES MADE TO THIS FILE WILL BE LOST!
+.TH "http_lib" 3 "25 April 1996" "c2man http_lib.c"
+.SH "NAME"
+http_server,
+http_port,
+http_proxy_server,
+http_proxy_port,
+http_put,
+http_get,
+http_head,
+http_delete,
+http_parse_url \- Http data exchanges mini library.
+.SH "SYNOPSIS"
+.ft B
+#include "http_lib.h"
+.br
+.sp
+extern char *http_server;
+.sp
+extern int http_port;
+.sp
+extern char *http_proxy_server;
+.sp
+extern int http_proxy_port;
+.sp
+http_retcode http_put
+.br
+(
+.br
+	char *filename,
+.br
+	char *data,
+.br
+	int length,
+.br
+	int overwrite,
+.br
+	char *type
+.br
+);
+.sp
+http_retcode http_get
+.br
+(
+.br
+	char *filename,
+.br
+	char **pdata,
+.br
+	int *plength,
+.br
+	char *typebuf
+.br
+);
+.sp
+http_retcode http_head
+.br
+(
+.br
+	char *filename,
+.br
+	int *plength,
+.br
+	char *typebuf
+.br
+);
+.sp
+http_retcode http_delete(char *filename);
+.sp
+http_retcode http_parse_url
+.br
+(
+.br
+	char *url,
+.br
+	char **pfilename
+.br
+);
+.ft R
+.SH "PARAMETERS"
+.TP
+.BR "char *filename" "	(http_put)"
+Name of the ressource to create.
+.TP
+.B "char *data"
+Pointer to the data to send.
+.TP
+.B "int length"
+Length of the data to send.
+.TP
+.B "int overwrite"
+Flag to request to overwrite the ressource if it
+was already existing.
+.TP
+.B "char *type"
+Type of the data, if NULL default type is used.
+.TP
+.BR "char *filename" "	(http_get)"
+Name of the ressource to read.
+.TP
+.B "char **pdata"
+Address of a pointer variable which will be set
+to point toward allocated memory containing read data.
+.TP
+.BR "int *plength" "	(http_get)"
+Address of integer variable which will be set to
+length of the read data.
+.TP
+.BR "char *typebuf" "	(http_get)"
+Allocated buffer where the read data type is returned.
+If NULL, the type is not returned.
+.TP
+.BR "int *plength" "	(http_head)"
+Address of integer variable which will be set to
+length of the data.
+.TP
+.BR "char *typebuf" "	(http_head)"
+Allocated buffer where the data type is returned.
+If NULL, the type is not returned.
+.TP
+.B "char *url"
+Writeable copy of an url.
+.TP
+.B "char **pfilename"
+Address of a pointer that will be filled with allocated filename
+the pointer must be equal to NULL before calling or it will be
+automatically freed (free(3)).
+.SH "DESCRIPTION"
+.SS "http_server"
+Pointer to a mallocated string containing server name or NULL.
+.SS "http_port"
+Server port number.
+.SS "http_proxy_server"
+Pointer to proxy server name or NULL.
+.SS "http_proxy_port"
+Proxy server port number or 0.
+.SS "http_put"
+Put data on the server
+
+This function sends data to the http data server.
+The data will be stored under the ressource name filename.
+.SS "http_get"
+Get data from the server
+
+This function gets data from the http data server.
+The data is read from the ressource named filename.
+Address of new new allocated memory block is filled in pdata
+whose length is returned via plength.
+.SS "http_head"
+Request the header
+
+This function outputs the header of thehttp data server.
+The header is from the ressource named filename.
+The length and type of data is eventually returned (like for http_get(3)).
+.SS "http_delete"
+Delete data on the server
+
+This function request a DELETE on the http data server.
+.SS "http_parse_url"
+Parses an url : setting the http_server and http_port global variables
+and returning the filename to pass to http_get/put/...
+.SH "RETURNS"
+.SS "http_put"
+A negative error code or a positive code from the server.
+.sp
+Possible values for a \fBhttp_retcode\fR are as follows:
+.IP
+Client side errors.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERRHOST\fR
+No such host.
+.TP \n(TLu
+\fBERRSOCK\fR
+Can't create socket.
+.TP \n(TLu
+\fBERRCONN\fR
+Can't connect to host.
+.TP \n(TLu
+\fBERRWRHD\fR
+Write error on socket while writing header.
+.TP \n(TLu
+\fBERRWRDT\fR
+Write error on socket while writing data.
+.TP \n(TLu
+\fBERRRDHD\fR
+Read error on socket while reading result.
+.TP \n(TLu
+\fBERRPAHD\fR
+Invalid answer from data server.
+.TP \n(TLu
+\fBERRNULL\fR
+Null data pointer.
+.TP \n(TLu
+\fBERRNOLG\fR
+No/Bad length in header.
+.TP \n(TLu
+\fBERRMEM\fR
+Can't allocate memory.
+.TP \n(TLu
+\fBERRRDDT\fR
+Read error while reading data.
+.TP \n(TLu
+\fBERRURLH\fR
+Invalid url - must start with 'http://'.
+.TP \n(TLu
+\fBERRURLP\fR
+Invalid port in url.
+.RE
+.PD
+.IP
+Return code by the server.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERR400\fR
+Invalid query.
+.TP \n(TLu
+\fBERR403\fR
+Forbidden.
+.TP \n(TLu
+\fBERR408\fR
+Request timeout.
+.TP \n(TLu
+\fBERR500\fR
+Server error.
+.TP \n(TLu
+\fBERR501\fR
+Not implemented.
+.TP \n(TLu
+\fBERR503\fR
+Service overloaded.
+.RE
+.PD
+.IP
+Succesful results.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBOK0\fR
+Successfull parse.
+.TP \n(TLu
+\fBOK201\fR
+Ressource succesfully created.
+.TP \n(TLu
+\fBOK200\fR
+Ressource succesfully read.
+.RE
+.PD
+.SS "http_get"
+A negative error code or a positive code from the server.
+.sp
+Possible values for a \fBhttp_retcode\fR are as follows:
+.IP
+Client side errors.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERRHOST\fR
+No such host.
+.TP \n(TLu
+\fBERRSOCK\fR
+Can't create socket.
+.TP \n(TLu
+\fBERRCONN\fR
+Can't connect to host.
+.TP \n(TLu
+\fBERRWRHD\fR
+Write error on socket while writing header.
+.TP \n(TLu
+\fBERRWRDT\fR
+Write error on socket while writing data.
+.TP \n(TLu
+\fBERRRDHD\fR
+Read error on socket while reading result.
+.TP \n(TLu
+\fBERRPAHD\fR
+Invalid answer from data server.
+.TP \n(TLu
+\fBERRNULL\fR
+Null data pointer.
+.TP \n(TLu
+\fBERRNOLG\fR
+No/Bad length in header.
+.TP \n(TLu
+\fBERRMEM\fR
+Can't allocate memory.
+.TP \n(TLu
+\fBERRRDDT\fR
+Read error while reading data.
+.TP \n(TLu
+\fBERRURLH\fR
+Invalid url - must start with 'http://'.
+.TP \n(TLu
+\fBERRURLP\fR
+Invalid port in url.
+.RE
+.PD
+.IP
+Return code by the server.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERR400\fR
+Invalid query.
+.TP \n(TLu
+\fBERR403\fR
+Forbidden.
+.TP \n(TLu
+\fBERR408\fR
+Request timeout.
+.TP \n(TLu
+\fBERR500\fR
+Server error.
+.TP \n(TLu
+\fBERR501\fR
+Not implemented.
+.TP \n(TLu
+\fBERR503\fR
+Service overloaded.
+.RE
+.PD
+.IP
+Succesful results.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBOK0\fR
+Successfull parse.
+.TP \n(TLu
+\fBOK201\fR
+Ressource succesfully created.
+.TP \n(TLu
+\fBOK200\fR
+Ressource succesfully read.
+.RE
+.PD
+.SS "http_head"
+A negative error code or a positive code from the server.
+.sp
+Possible values for a \fBhttp_retcode\fR are as follows:
+.IP
+Client side errors.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERRHOST\fR
+No such host.
+.TP \n(TLu
+\fBERRSOCK\fR
+Can't create socket.
+.TP \n(TLu
+\fBERRCONN\fR
+Can't connect to host.
+.TP \n(TLu
+\fBERRWRHD\fR
+Write error on socket while writing header.
+.TP \n(TLu
+\fBERRWRDT\fR
+Write error on socket while writing data.
+.TP \n(TLu
+\fBERRRDHD\fR
+Read error on socket while reading result.
+.TP \n(TLu
+\fBERRPAHD\fR
+Invalid answer from data server.
+.TP \n(TLu
+\fBERRNULL\fR
+Null data pointer.
+.TP \n(TLu
+\fBERRNOLG\fR
+No/Bad length in header.
+.TP \n(TLu
+\fBERRMEM\fR
+Can't allocate memory.
+.TP \n(TLu
+\fBERRRDDT\fR
+Read error while reading data.
+.TP \n(TLu
+\fBERRURLH\fR
+Invalid url - must start with 'http://'.
+.TP \n(TLu
+\fBERRURLP\fR
+Invalid port in url.
+.RE
+.PD
+.IP
+Return code by the server.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERR400\fR
+Invalid query.
+.TP \n(TLu
+\fBERR403\fR
+Forbidden.
+.TP \n(TLu
+\fBERR408\fR
+Request timeout.
+.TP \n(TLu
+\fBERR500\fR
+Server error.
+.TP \n(TLu
+\fBERR501\fR
+Not implemented.
+.TP \n(TLu
+\fBERR503\fR
+Service overloaded.
+.RE
+.PD
+.IP
+Succesful results.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBOK0\fR
+Successfull parse.
+.TP \n(TLu
+\fBOK201\fR
+Ressource succesfully created.
+.TP \n(TLu
+\fBOK200\fR
+Ressource succesfully read.
+.RE
+.PD
+.SS "http_delete"
+A negative error code or a positive code from the server.
+.sp
+Possible values for a \fBhttp_retcode\fR are as follows:
+.IP
+Client side errors.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERRHOST\fR
+No such host.
+.TP \n(TLu
+\fBERRSOCK\fR
+Can't create socket.
+.TP \n(TLu
+\fBERRCONN\fR
+Can't connect to host.
+.TP \n(TLu
+\fBERRWRHD\fR
+Write error on socket while writing header.
+.TP \n(TLu
+\fBERRWRDT\fR
+Write error on socket while writing data.
+.TP \n(TLu
+\fBERRRDHD\fR
+Read error on socket while reading result.
+.TP \n(TLu
+\fBERRPAHD\fR
+Invalid answer from data server.
+.TP \n(TLu
+\fBERRNULL\fR
+Null data pointer.
+.TP \n(TLu
+\fBERRNOLG\fR
+No/Bad length in header.
+.TP \n(TLu
+\fBERRMEM\fR
+Can't allocate memory.
+.TP \n(TLu
+\fBERRRDDT\fR
+Read error while reading data.
+.TP \n(TLu
+\fBERRURLH\fR
+Invalid url - must start with 'http://'.
+.TP \n(TLu
+\fBERRURLP\fR
+Invalid port in url.
+.RE
+.PD
+.IP
+Return code by the server.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERR400\fR
+Invalid query.
+.TP \n(TLu
+\fBERR403\fR
+Forbidden.
+.TP \n(TLu
+\fBERR408\fR
+Request timeout.
+.TP \n(TLu
+\fBERR500\fR
+Server error.
+.TP \n(TLu
+\fBERR501\fR
+Not implemented.
+.TP \n(TLu
+\fBERR503\fR
+Service overloaded.
+.RE
+.PD
+.IP
+Succesful results.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBOK0\fR
+Successfull parse.
+.TP \n(TLu
+\fBOK201\fR
+Ressource succesfully created.
+.TP \n(TLu
+\fBOK200\fR
+Ressource succesfully read.
+.RE
+.PD
+.SS "http_parse_url"
+A negative error code or 0 if sucessfully parsed.
+.sp
+Possible values for a \fBhttp_retcode\fR are as follows:
+.IP
+Client side errors.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERRHOST\fR
+No such host.
+.TP \n(TLu
+\fBERRSOCK\fR
+Can't create socket.
+.TP \n(TLu
+\fBERRCONN\fR
+Can't connect to host.
+.TP \n(TLu
+\fBERRWRHD\fR
+Write error on socket while writing header.
+.TP \n(TLu
+\fBERRWRDT\fR
+Write error on socket while writing data.
+.TP \n(TLu
+\fBERRRDHD\fR
+Read error on socket while reading result.
+.TP \n(TLu
+\fBERRPAHD\fR
+Invalid answer from data server.
+.TP \n(TLu
+\fBERRNULL\fR
+Null data pointer.
+.TP \n(TLu
+\fBERRNOLG\fR
+No/Bad length in header.
+.TP \n(TLu
+\fBERRMEM\fR
+Can't allocate memory.
+.TP \n(TLu
+\fBERRRDDT\fR
+Read error while reading data.
+.TP \n(TLu
+\fBERRURLH\fR
+Invalid url - must start with 'http://'.
+.TP \n(TLu
+\fBERRURLP\fR
+Invalid port in url.
+.RE
+.PD
+.IP
+Return code by the server.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBERR400\fR
+Invalid query.
+.TP \n(TLu
+\fBERR403\fR
+Forbidden.
+.TP \n(TLu
+\fBERR408\fR
+Request timeout.
+.TP \n(TLu
+\fBERR500\fR
+Server error.
+.TP \n(TLu
+\fBERR501\fR
+Not implemented.
+.TP \n(TLu
+\fBERR503\fR
+Service overloaded.
+.RE
+.PD
+.IP
+Succesful results.
+.RS 0.75in
+.PD 0
+.ft B
+.nr TL \w'ERRHOST'u+0.2i
+.ft R
+.TP \n(TLu
+\fBOK0\fR
+Successfull parse.
+.TP \n(TLu
+\fBOK201\fR
+Ressource succesfully created.
+.TP \n(TLu
+\fBOK200\fR
+Ressource succesfully read.
+.RE
+.PD
+.SH "LIMITATIONS"
+.SS "http_put"
+Filename is truncated to first 256 characters
+and type to 64.
+.SS "http_get"
+Filename is truncated to first 256 characters.
+.SS "http_head"
+Filename is truncated to first 256 characters.
+.SS "http_delete"
+Filename is truncated to first 256 characters.

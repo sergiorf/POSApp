@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<?RVConfigUtility MajorVersion = '0' MinorVersion = '0' PatchVersion = '0'?>
+<RVConfigUtility>
+   <RVConfigModule>
+      <?RVConfig DLL_NAME = 'connection' MajorVersion = '1' MinorVersion = '0' PatchVersion = '0' Expanded = 'true' Active = 'false' Enabled = 'true' UserLabel = ''?>
+      <ScanChainNames Type = 'Str'>?</ScanChainNames>
+      <NoOfScanChains Type = 'Int32' Inherited = 'true'>1</NoOfScanChains>
+      <ConnectionManager Type = 'User' Inherited = 'true'>0x008E3B48</ConnectionManager>
+      <TemplateManager Type = 'User' Inherited = 'true'>0x008E3B60</TemplateManager>
+      <BrokerCoreList Type = 'User' Inherited = 'true'>0x008E3B88</BrokerCoreList>
+      <ChildModuleName Type = 'Str' Inherited = 'true'>Devices</ChildModuleName>
+      <RVConfigModule>
+         <?RVConfig DLL_NAME = 'scanchain' Expanded = 'true' Active = 'true' Enabled = 'true' UserLabel = ''?>
+         <TemplateName Type = 'Str' Inherited = 'true'>/real-ice/jtag-templates/arm/arm966es/V1.0</TemplateName>
+         <ChildModuleName Type = 'Str' Inherited = 'true'>ARM966E-S</ChildModuleName>
+         <DeviceOptions Type = 'Str' Inherited = 'true'></DeviceOptions>
+         <IRLength Type = 'Str' Inherited = 'true'></IRLength>
+<!-- START GENERATED CONNECTION MODULE -->
+         <RVConfigModule>
+            <?RVConfig DLL_NAME = 'dynamiccore' Expanded = 'true' Active = 'false' Enabled = 'true' UserLabel = ''?>
+            <TemplateName Type = 'Str'>/real-ice/jtag-templates/arm/arm7tdmi/V1.0</TemplateName>
+            <ModuleName Type = 'Str'>I1 cesmpl.ou _0</ModuleName>
+            <IRLength Type = 'Str'></IRLength>
+            <DeviceOptions Type = 'Str'></DeviceOptions>
+         </RVConfigModule>
+<!-- END GENERATED CONNECTION MODULE -->
+         <DataList Type = 'Branch'>
+            <DataListUID Type = 'User'>0x00000002</DataListUID>
+            <ClockType Type = 'Int32'>4</ClockType>
+            <ClockSpeed Type = 'Str'>10000000</ClockSpeed>
+            <OtherSpeed Type = 'Str'>10.000 MHz</OtherSpeed>
+            <Tap_Count Type = 'UInt32'>2</Tap_Count>
+            <Tap_0 Type = 'Branch'>
+               <DataListUID Type = 'User'>0x00000004</DataListUID>
+               <CoreName Type = 'Str'>ARM7TDMI</CoreName>
+               <FamilyName Type = 'Str'>ARM7</FamilyName>
+               <DllName Type = 'Str'>dynamiccore</DllName>
+               <TemplateVersion Type = 'Str'>1:0:0</TemplateVersion>
+               <DllVersion Type = 'Str'>rvi.dynamic.core</DllVersion>
+               <Description Type = 'Str'>ARM7TDMI</Description>
+               <IRLength Type = 'Str'></IRLength>
+               <TemplateName Type = 'Str'>/real-ice/jtag-templates/arm/arm7tdmi/V1.0</TemplateName>
+               <DeviceID Type = 'Str'></DeviceID>
+               <Manufacturer Type = 'Str'></Manufacturer>
+               <DeviceOptions Type = 'Str'></DeviceOptions>
+            </Tap_0>
+            <Tap_1 Type = 'Branch'>
+               <DataListUID Type = 'User'>0x00000005</DataListUID>
+               <CoreName Type = 'Str'>ARM966E-S</CoreName>
+               <FamilyName Type = 'Str'>ARM9</FamilyName>
+               <DllName Type = 'Str'>dynamiccore</DllName>
+               <TemplateVersion Type = 'Str'>1:0:0</TemplateVersion>
+               <DllVersion Type = 'Str'>rvi.dynamic.core</DllVersion>
+               <Description Type = 'Str'>ARM966E-S</Description>
+               <IRLength Type = 'Str'></IRLength>
+               <TemplateName Type = 'Str'>/real-ice/jtag-templates/arm/arm966es/V1.0</TemplateName>
+               <DeviceID Type = 'Str'></DeviceID>
+               <Manufacturer Type = 'Str'></Manufacturer>
+               <DeviceOptions Type = 'Str'></DeviceOptions>
+            </Tap_1>
+         </DataList>
+
+      </RVConfigModule>
+
+<!--
+      <RVConfigModule>
+         <?RVConfig DLL_NAME = 'advanced' Expanded = 'true' Active = 'false' Enabled = 'true' UserLabel = ''?>
+         <ModuleName Type = 'Str'>Advanced</ModuleName>
+         <ScanChain0BitPattern Type = 'Int32'>0</ScanChain0BitPattern>
+         <DataList Type = 'Branch'>
+            <ResetHoldTime Type = 'UInt32'>100</ResetHoldTime>
+            <PostResetDelay Type = 'UInt32'>1000</PostResetDelay>
+            <nTRSTHoldTime Type = 'UInt32'>100</nTRSTHoldTime>
+            <nTRSTPostResetTime Type = 'UInt32'>100</nTRSTPostResetTime>
+            <DoSoftTAPReset Type = 'UInt32'>1</DoSoftTAPReset>
+            <ResetOnDisconnect Type = 'UInt32'>0</ResetOnDisconnect>
+            <ResetOnConnect Type = 'UInt32'>1</ResetOnConnect>
+            <ResetOperation Type = 'UInt32'>2</ResetOperation>
+            <Linked_SRST_TRST Type = 'UInt32'>0</Linked_SRST_TRST>
+            <PostResetState Type = 'UInt32'>1</PostResetState>
+         </DataList>
+      </RVConfigModule>
+-->
+
+      <ConnectionType Type = 'Str'>TCP/IP</ConnectionType>
+      <ConnectionName Type = 'Str'>TCP:localhost</ConnectionName>
+   </RVConfigModule>
+</RVConfigUtility>

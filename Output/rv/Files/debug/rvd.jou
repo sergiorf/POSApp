@@ -1,0 +1,11 @@
+;;; JOURNAL FILE: rvd.jou
+> journal on=rvd.jou
+> connect,route @Verix
+Warning: 0x05060012: Target in wrong state/mode.
+> connect "I1 cesmpl.ou _0"
+Error P1001E (Parser): Specified target not in list of available targets
+> journal on=rvd.jou
+> connect,route @Verix
+Warning: 0x05060013: Target not responding.
+> connect "I1 cesmpl.out _0"
+Error P1001E (Parser): Specified target not in list of available targets

@@ -1,0 +1,32 @@
+# New!
+# RVDEBUG.BRD default Board-file. This file should not be hand edited. The
+# Settings Window should be used to edit this file and any derivatives
+# of it. 
+# Copyright (c) 1997-2001 ARM Ltd.
+$rvdebug
+[INCLUDE] (*.rbe) ARM RDI Configuration Entries\\ Generated RDI board-entries
+[CONNECTION=ARM_MICE] 
+description="Multi-ICE direct connect"
+connect_with.manufacturer=ARM-ARM-PP
+configuration="arm.jtg"
+disabled=True
+# [RVBROKER=localhost] 
+# description="Simulator Broker"
+# auto_connect=False
+# # The rvbroker.brd entry allows inclusion of a special board file containing
+# # all network nodes that can/are running RVBROKER. This allows one single
+# # file shared by multiple users to easily access simulators, emulators,
+# # and EVMs anywhere on the network. This file should be installed in your
+# # home directory or <install>/etc, or you may specify the full pathname
+# # to a shared location (on the network).
+# [INCLUDE] ?rvbroker.brd\\ List of RVBROKER servers across network
+# # The *.bcd include loads in files created by board manufacturers, ASIC
+# # chip designers, and custom board designers (or someone who wants to add
+# # the information). This allow use of the extended information by board
+# # entries of type DERIVED and DATFILE.
+[INCLUDE] (*.bcd) Board/Chip Definitions\\ Custom Board and Chip definitions
+[CONNECTION=Verix] 
+connect_with.manufacturer=ARM-ARM-NW
+description="VeriFone terminal proxy (TCP/IP)"
+configuration="verix.rvc"
+remote.hostname=localhost

@@ -1,0 +1,4 @@
+journal on=rvd.jou
+connect,route @Verix
+connect "I1 cesmpl.ou _0"
+load/NI/R/NP/PD 'cesmpl.axf'

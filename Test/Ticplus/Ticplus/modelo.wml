@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<card title="$(Rotulo)$(OffSufixo)" ontimer="form.wmlsc#imprimir()">
+<do type="prev"/>
+<timer value="5"/>
+<report align="center" width="1" height="1" footerLFs="0">$(Codigo) - $(PedidoId)
+  <br/>
+  &nbsp;</report>
+<report footerLFs="0" align="center">
+  <img src="F:l2ea" alt="Imagem E1"/>
+</report>
+<report align="center" width="2" height="2" footerLFs="0">EVENTO DEMONSTRATIVO
+  <br/>
+  <br/>
+  PISTA 5
+  <br/>
+  UNISSEX -  $(Tipo)
+  <br/>
+  <b></b>
+  R$$ $(Valor)
+  <br/>
+  &nbsp;</report>
+<report align="center" width="1" height="1" footerLFs="0">1° EDIÇÃO - SERTANEJO NA VEIA
+  <br/>
+  &nbsp;</report>
+<report align="left" width="1" height="1" footerLFs="0">LOTE: $(Lote)
+  <br/>
+  PDV: $(Pdv)
+  <br/>
+  DATA: $(Data) $(Hora)
+  <br/>
+  &nbsp;</report>
+<report align="center" width="1" height="1" footerLFs="0">
+  <barcode value="$(Codigo)" type="I2of5" width="2" height="96"/>
+  <br/>
+  $(Codigo)
+  <br/>
+  &nbsp;</report>
+<report align="center" width="1" height="1" footerLFs="0">Visite:
+  <br/>
+  www.
+  <b>TICPLUS</b>
+  .com</report>
+<report footerLFs="0">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</report>
+<p align="center">
+  <br/>
+  Imprimindo $(QtdOK)/$(QtdTotal)...</p>
+</card>
+</wml>

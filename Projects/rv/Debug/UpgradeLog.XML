@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CESmpl">
+</Property><Property Name="Solution File" Value="C:\Ticplus\SKYTEF\1stWorking\CSmpl_GPRS_Auto_12212009\12182009\Projects\rv\Debug\CESmpl.sln">
+</Property><Property Name="User Options File" Value="C:\Ticplus\SKYTEF\1stWorking\CSmpl_GPRS_Auto_12212009\12182009\Projects\rv\Debug\CESmpl.suo">
+</Property><Property Name="Date" Value="jeudi 3 janvier 2013">
+</Property><Property Name="Time" Value="23:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CESmpl.sln" Description="File successfully backed up as C:\Ticplus\SKYTEF\1stWorking\CSmpl_GPRS_Auto_12212009\12182009\Projects\rv\Debug\CESmpl.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="CESmpl.suo" Description="File successfully backed up as C:\Ticplus\SKYTEF\1stWorking\CSmpl_GPRS_Auto_12212009\12182009\Projects\rv\Debug\CESmpl.suo.old">
+</Event><Event ErrorLevel="0" Project="CESmpl" Source="CESmpl.vcproj" Description="Converting project file 'C:\Ticplus\SKYTEF\1stWorking\CSmpl_GPRS_Auto_12212009\12182009\Projects\rv\Debug\CESmpl.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CESmpl" Source="CESmpl.vcproj" Description="VCConvertEngine could not convert attribute CompileAsManaged =  under Tool VCNMakeTool.">
+</Event><Event ErrorLevel="1" Project="CESmpl" Source="CESmpl.vcproj" Description="VCConvertEngine could not convert attribute CompileAsManaged =  under Tool VCNMakeTool.">
+</Event><Event ErrorLevel="0" Project="CESmpl" Source="CESmpl.vcproj" Description="Done converting to new project file 'C:\Ticplus\SKYTEF\1stWorking\CSmpl_GPRS_Auto_12212009\12182009\Projects\rv\Debug\CESmpl.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CESmpl" Source="CESmpl.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CESmpl.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CESmpl.sln" Description="Converted">
+</Event></UpgradeLog>
