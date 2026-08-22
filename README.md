@@ -110,8 +110,6 @@ Developers must provide any required certificates locally. Do not commit:
 Output/rv/Files/Certs/
 ```
 
-Security note: this repository historically contained `Output/rv/Files/Certs/SvrCert.key`. That key must be considered compromised. Removing it from the current tree does not remove it from Git history.
-
 ## Tests
 
 The repository includes a legacy Visual Studio test project:
