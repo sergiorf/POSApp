@@ -1,0 +1,52 @@
+# Visual Studio
+*.sdf
+*.suo
+*.user
+*.ncb
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+*.log
+.vs/
+ipch/
+
+# Visual Studio build intermediates
+Test/Ticplus/Ticplus/Debug/
+Test/Ticplus/ipch/
+*.tlog
+*.lastbuildstate
+*.idb
+*.manifest
+*.res
+BuildLog.htm
+
+# Build outputs
+*.o
+*.obj
+*.axf
+*.out
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.map
+
+# Archives / temporary debug files
+*.rar
+*.zip
+*.tmp
+*.bak
+*~
+
+# Generated Verix debug/output directories
+Output/rv/obj/
+Output/rv/Files/debug/
+
+# Local/private certificates and keys.
+# Developers must provide required deployment certificates locally.
+*.key
+*.pem
+*.pfx
+*.p12
+Output/rv/Files/Certs/
